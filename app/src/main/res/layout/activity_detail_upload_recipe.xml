@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".DetailRecipeActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:background="@drawable/rounded_bg">
+
+                <TextView
+                    android:id="@+id/detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:padding="16dp"
+                    android:textColor="@color/mainText"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:text="judul recipe" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/notpass" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/mainText"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:text="Description" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/notpass"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Description" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/notpass" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/mainText"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:text="Ingredients" />
+
+                <LinearLayout
+                    android:id="@+id/lv_ingridients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/notpass" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/mainText"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:text="Steps" />
+
+                <LinearLayout
+                    android:id="@+id/lv_steps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_edit"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:background="@drawable/button_next">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Edit"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textAlignment="center"
+                    android:padding="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

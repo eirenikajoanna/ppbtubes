@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="pass">#1FCC79</color>
+
+<!--    Primary color yellow-->
+    <color name="yellow">#FABA64</color>
+    <color name="secondary">#FF6464</color>
+<!--    Text Color -->
+    <color name="mainText">#2E3E5C</color>
+<!--    notpass == secondaryText -->
+    <color name="notpass">#9FA5C0</color>
+    <color name="outline">#D0DBEA</color>
+    <color name="form">#F4F5F7</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

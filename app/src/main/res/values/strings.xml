@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Cookpedia</string>
+    <string name="title_activity_nav">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_upload">Upload</string>
+    <string name="title_profile">Profile</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="google">Google</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="cookpedia">Cookpedia</string>
+    <string name="search">Search</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="enter_ingredient">Enter ingredient</string>
+    <string name="food_picture">Food Picture</string>
+    <string name="food_name">Food Name</string>
+    <string name="enter_food_name">Enter Food Name</string>
+    <string name="upload">Upload</string>
+    <string name="tell_us_the_steps">Tell us the steps</string>
+    <string name="steps">Steps</string>
+    <string name="description">Description</string>
+    <string name="tell_us_a_little_about_your_food">Tell us a little about your food</string>
+    <string name="delete">Delete</string>
+    <string name="title_activity_detail_upload_recipe">DetailUploadRecipe</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>
