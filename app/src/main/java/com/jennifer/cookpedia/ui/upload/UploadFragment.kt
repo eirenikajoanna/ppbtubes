@@ -50,21 +50,15 @@ class UploadFragment : Fragment() {
         adapter = RecipeNoteAdapter(requireActivity(), this@UploadFragment)
         rv_notes.adapter = adapter
 
+        noteHelper = RecipeNoteHelper.getInstance(requireActivity().applicationContext)!!
+        noteHelper.open()
         fab_add = root.findViewById(R.id.fab_add)
 
         progressbar = root.findViewById(R.id.progressbar)
-        return root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
         fab_add.setOnClickListener {
             val intent = Intent(activity, RecipeNoteAddUpdateActivity::class.java)
             startActivityForResult(intent, RecipeNoteAddUpdateActivity.REQUEST_ADD)
         }
-
-        noteHelper = RecipeNoteHelper.getInstance(requireActivity().applicationContext)!!
-        noteHelper.open()
 
         if (savedInstanceState == null) {
             loadNotesAsync()
@@ -74,7 +68,7 @@ class UploadFragment : Fragment() {
                 adapter.listNotes = list
             }
         }
-
+        return root
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

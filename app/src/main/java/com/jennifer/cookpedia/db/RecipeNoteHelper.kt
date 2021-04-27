@@ -11,7 +11,7 @@ import java.sql.SQLException
 class RecipeNoteHelper(context: Context) {
     companion object {
         private const val DATABASE_TABLE = DatabaseContract.RecipeColumns.TABLE_NAME
-        private lateinit var dataBaseHelper: DatabaseRecipeNoteHelper
+        private lateinit var dataBaseHelper: DatabaseRecipeHelper
         private var INSTANCE: RecipeNoteHelper? = null
         private lateinit var database: SQLiteDatabase
         fun getInstance(context: Context): RecipeNoteHelper? =
@@ -20,7 +20,7 @@ class RecipeNoteHelper(context: Context) {
                 }
     }
     init {
-        dataBaseHelper = DatabaseRecipeNoteHelper(context)
+        dataBaseHelper = DatabaseRecipeHelper(context)
     }
     
     @Throws(SQLException::class)
